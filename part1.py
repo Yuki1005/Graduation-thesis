@@ -23,7 +23,7 @@ loc_list = cache_loc_list()
 location =  st.text_input('行きたいところ', placeholder='GoogleMap_URL', help='GoogleMap_URLを使用すること')
 
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
     if st.button("追加",key=1):
         split_url , zahyo = url_org(loc_list)
@@ -31,9 +31,7 @@ with col1:
         location_time = pd.DataFrame(loc_list, columns=["地名","latitude","longitude"])
         
         st.dataframe(location_time,height = 200)
+
 with col2:
-    if st.button("消去",key=2):
-        location =  st.text_input('行きたいところ', placeholder='GoogleMap_URL', help='GoogleMap_URLを使用すること')
-with col3:
     if st.button("リセット",key=3):
         loc_list.clear()
