@@ -20,7 +20,7 @@ loc_list = cache_loc_list()
 
 #front_end
 
-location =  st.text_input('行きたいところ', placeholder='GoogleMap_URL', help='GoogleMap_URLを使用すること')
+location =  st.text_input('行きたいところ', placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
 
 
 col1, col2 = st.columns(2)
