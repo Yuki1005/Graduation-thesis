@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import urllib.parse
 
-#関数まとめ
+# 関数まとめ
 
 def url_org(loc_list):
     url_data = location
@@ -10,7 +10,7 @@ def url_org(loc_list):
     zahyo = split_url[6].split(",")
     return split_url,zahyo
 
-#streamlit global関数
+# streamlit global関数
 
 @st.cache_resource
 def cache_loc_list():
@@ -18,7 +18,7 @@ def cache_loc_list():
     return loc_list
 loc_list = cache_loc_list()
 
-#front_end
+# front_end
 
 image = st.image("trip_image.jpg")
 
