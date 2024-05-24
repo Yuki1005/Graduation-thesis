@@ -22,7 +22,7 @@ loc_list = cache_loc_list()
 
 image = st.image("trip_image.jpg")
 
-title = st.title("TriOpt")
+title = st.title("TripOpt")
 
         
 with st.form("行きたいところ",clear_on_submit=True):
