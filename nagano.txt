@@ -12,3 +12,5 @@ https://www.google.co.jp/maps/place/%E9%98%BF%E5%AF%BA%E6%B8%93%E8%B0%B7%E7%AC%A
 30
 https://www.google.co.jp/maps/place/%E9%BB%92%E5%A7%AB%E9%AB%98%E5%8E%9F/@36.8258717,138.1575047,17z/data=!3m1!4b1!4m6!3m5!1s0x5ff625cf545e1d9b:0xfdc3ed8ede09bf4b!8m2!3d36.8258717!4d138.1575047!16s%2Fg%2F11flwg008_?hl=ja&entry=ttu
 30
+https://www.google.co.jp/maps/place/%E9%95%B7%E6%B4%A5%E7%94%B0%E9%A7%85/@35.531813,139.4928547,17.69z/data=!4m6!3m5!1s0x6018f850ed7f1c8b:0x5e5675d0d7f58ec5!8m2!3d35.5319546!4d139.4943049!16s%2Fm%2F03m87_j?hl=ja&entry=ttu
+0
