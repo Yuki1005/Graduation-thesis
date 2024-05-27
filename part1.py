@@ -31,7 +31,8 @@ loc_list_start_goal = cache2_loc_list()
 
 # front_end
 image = st.image("trip_image.jpg")
-title = st.title("TripOpt")
+title = st.title("TripOpt_卒業研究")
+creater = st.text("Yuki Hiramatsu")
 
 
 #　出発地点_目的地
