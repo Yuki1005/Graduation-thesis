@@ -90,7 +90,7 @@ except AttributeError:
 
 
 # 昼ご飯選択するかしないか
-with st.form("ランチの場所を選択する",clear_on_submit=False):
+with st.form("ランチの場所を選択する",clear_on_submit=True):
     lunch_Y_N = st.radio("ランチの場所(複数候補可能)", ["指定する","指定しない"],index=1,horizontal=True)
     confirm_button = st.form_submit_button("確定")
     if lunch_Y_N == "指定する":
@@ -137,7 +137,7 @@ except:
 
 
 #　行きたいところ        
-with st.form("行きたいところ",clear_on_submit=False):
+with st.form("行きたいところ",clear_on_submit=True):
     location =  st.text_input('行きたいところ', placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
     col3_1, col3_2 = st.columns(2)
     with col3_1:
