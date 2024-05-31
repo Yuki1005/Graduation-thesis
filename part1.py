@@ -91,7 +91,7 @@ except AttributeError:
 
 # 昼ご飯選択するかしないか
 with st.form("ランチの場所を選択する",clear_on_submit=True):
-    lunch_Y_N = st.radio("ランチの場所(複数候補可能)", ["指定する","指定しない"],index=1,horizontal=True)
+    lunch_Y_N = st.radio("ランチの場所(複数候補可能)", ["指定する","指定しない"],index=0,horizontal=True)
     confirm_button = st.form_submit_button("確定")
     if lunch_Y_N == "指定する":
         loc_lunch = st.text_input("場所", placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
