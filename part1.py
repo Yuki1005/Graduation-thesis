@@ -36,7 +36,7 @@ loc_list_lunch = cache3_loc_list()
 
 
 # front_end
-# image = st.image("trip_image.jpg")
+image = st.image("trip_image.png")
 title = st.title("TripOpt_卒業研究")
 creater = st.text("Yuki Hiramatsu")
 
