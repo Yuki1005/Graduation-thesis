@@ -4,3 +4,4 @@ pandas
 pulp
 folium
 openrouteservice
+streamlit_folium
