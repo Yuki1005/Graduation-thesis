@@ -44,7 +44,7 @@ creater = st.text("Yuki Hiramatsu")
 #　出発地_目的地
 with st.form("出発地_目的地",clear_on_submit=False):
     loc_start = st.text_input("出発地", placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
-    loc_goal = st.text_input("目的地", placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
+    loc_goal = st.text_input("目的地(ホテル名)", placeholder='GoogleMap_URL', help='GoogleMapのURLを使用すること')
     time_start_goal = st.slider(
     '出発到着予定時刻',
     datetime.time(5, 0), datetime.time(23,0), (datetime.time(9, 45), datetime.time(18, 15)),
