@@ -65,6 +65,7 @@ with st.form("出発地_目的地",clear_on_submit=False):
         st.session_state['form1_2'] = location_start_goal
 
 try:
+    st.text(st.session_state.form1_1)
     st.dataframe(st.session_state.form1_2,height=110)
     # folium 出発地_目的地
     ave_lat1 = st.session_state.form1_2["latitude"].sum()/2
