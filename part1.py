@@ -177,6 +177,7 @@ except:
     pass
 
 try:
-    st_folium(m_start_goal, width=480, height=320)
+    #st_folium(m_start_goal, width=480, height=320)
+    st_folium(m_start_goal, width=960, height=640)
 except:
     pass
