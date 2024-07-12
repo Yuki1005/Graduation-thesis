@@ -6,10 +6,78 @@
 制約条件
 \begin{equation}
   \sum_{k=K}^{}\sum_{i\in V,i\neq j}^{}x_{ij}^{k} \leqq 1
-  \qquad\qquad\forall j \in V\setminus\left\{0 \right\} \tag{2}
+  \qquad\qquad\forall j \in V \tag{2.1}
 \end{equation}
 
 \begin{equation}
   \sum_{k=K}^{}\sum_{i\in V,i\neq j}^{}x_{ji}^{k} \leqq 1
-  \qquad\qquad\forall j \in V\setminus\left\{0 \right\} \tag{3}
+  \qquad\qquad\forall j \in V \tag{2.2}
+\end{equation}
+
+\begin{equation}
+  \sum_{j\in V\setminus\left\{0 \right\}}^{}x_{0j}^{0} = 1 \tag{3.1}
+\end{equation}
+
+\begin{equation}
+  \sum_{i\in V\setminus\left\{0 \right\}}^{}x_{i0}^{0} = 0 \tag{3.2}
+\end{equation}
+
+\begin{equation}
+  \sum_{j\in V\setminus\left\{0 \right\}}^{}x_{1j}^{1} = 0 \tag{3.3}
+\end{equation}
+
+\begin{equation}
+  \sum_{i\in V\setminus\left\{0 \right\}}^{}x_{i1}^{1} = 1 \tag{3.4}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V}^{}\sum_{j\in L}^{}x_{ij}^{0} = 1 \tag{4.1}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V}^{}\sum_{j\in L}^{}x_{ji}^{0} = 0 \tag{4.1}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V\setminus\left\{0,1 \right\}}^{}\sum_{j\in L}^{}x_{ij}^{1} = 0 \tag{4.3}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V\setminus\left\{0,1 \right\}}^{}\sum_{j\in L}^{}x_{ji}^{1} = 1 \tag{4.4}
+\end{equation}
+
+\begin{equation}
+  \sum_{j \in V\setminus\left\{0,1 \right\}}^{}x_{lj}^{1} - \sum_{i \in V}^{}x_{il}^{0} \leqq 0
+  \qquad\qquad\forall l \in L \tag{5}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V,i\neq j}^{}x_{ij}^{1} - \sum_{i \in V}^{}x_{ji}^{0} \leqq 0
+  \qquad\qquad\forall j \in V\setminus\left\{0,L \right\} \tag{6.1}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V,i\neq j}^{}x_{ij}^{0} - \sum_{i \in V}^{}x_{ji}^{1} \leqq 0
+  \qquad\qquad\forall j \in V\setminus\left\{1,L \right\} \tag{6.2}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V,i\neq j}^{}\sum_{j \in V\setminus\left\{0 \right\}}^{}(3600 + c_{ij})x_{ij}^{0} \leqq Q1 + 7200 \tag{7.1}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V,i\neq j}^{}\sum_{j \in V\setminus\left\{0 \right\}}^{}(3600 + c_{ij})x_{ij}^{0} \geqq Q1 + 3600 \tag{7.2}
+\end{equation}
+
+\begin{equation}
+  \sum_{i \in V,i\neq j}^{}\sum_{j \in V\setminus\left\{0 \right\}}^{}(3600 + c_{ij})x_{ij}^{0} +
+  \sum_{i \in V,i\neq j}^{}\sum_{j \in V\setminus\left\{0 \right\}}^{}(3600 + c_{ij})x_{ij}^{1} \leqq Q2 + 3600 \tag{7.3}
+\end{equation}
+
+\begin{equation}
+  \sum_{k \in K}^{}\sum_{(i,j) \in E,,i\neq j}^{}x_{ij}^{k} \leqq |S| - 1  \qquad \qquad  S \subseteq V \setminus \{0\} \tag{8}
+\end{equation}
+
+\begin{equation}
+x_{ij}^{k} \in\{0,1\} \qquad \qquad  \forall k \in K, \forall(i, j) \in E \tag{9}
 \end{equation}
